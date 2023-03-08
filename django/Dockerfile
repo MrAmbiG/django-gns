@@ -20,9 +20,9 @@ ADD requirements.txt /djangoapp/requirements.txt
 RUN pip install -r /djangoapp/requirements.txt
 
 # expose the port 8000
-EXPOSE 8000
+EXPOSE 5000
 
 # define the default command to run when starting the container
 RUN python manage.py collectstatic --no-input
 # CMD ["gunicorn", "--bind", ":8000", "djangoapp.wsgi:application"]
-CMD ["python", "manage.py", "runserver"]
+CMD ["python", "manage.py", "runserver", "0.0.0.0:5000"]

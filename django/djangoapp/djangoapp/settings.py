@@ -40,8 +40,6 @@ INSTALLED_APPS = [
     # modules
     "rest_framework",
     "drf_yasg",
-    # local
-    "stars",
 ]
 
 MIDDLEWARE = [

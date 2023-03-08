@@ -1,3 +1,11 @@
-FROM nginx:1.15.0-alpine
+FROM nginx:1.19.0-alpine
 
 RUN rm /etc/nginx/conf.d/default.conf
+COPY conf.d/local.conf /etc/nginx/conf.d
+
+# # Change ownership of static files directory to Nginx user
+# RUN chown -R nginx:nginx /djangoapp/staticfiles
+
+# # Change ownership of media files directory to Nginx user
+# RUN chown -R nginx:nginx /djangoapp/media
+

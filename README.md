@@ -1,7 +1,7 @@
 # django-pgns
 django, postgresql, nginx, gunicorn, swaggerui. A POC boilerplate template
 
-- docker-compose up -d --no-deps --build djangoapp postgres
+- docker compose down -v && docker-compose up -d --no-deps --build djangoapp nginx
 
 # users
 django/django

@@ -24,4 +24,5 @@ EXPOSE 8000
 
 # define the default command to run when starting the container
 RUN python manage.py collectstatic --no-input
-CMD ["gunicorn", "--bind", ":8000", "djangoapp.wsgi:application"]
+# CMD ["gunicorn", "--bind", ":8000", "djangoapp.wsgi:application"]
+CMD ["python", "manage.py", "runserver"]

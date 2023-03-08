@@ -28,18 +28,18 @@ services:
           condition: service_started
 
   # nginx
-  nginx:
-    build: ./nginx
-    ports:
-      - 8000:80
-    depends_on:
-      - djangoapp
-    networks:
-      - network_web
-    volumes:
-      - ./nginx/conf.d:/etc/nginx/conf.d
-      - static_volume:/djangoapp/static
-      - media_volume:/djangoapp/media
+  # nginx:
+  #   build: ./nginx
+  #   ports:
+  #     - 8000:80
+  #   depends_on:
+  #     - djangoapp
+  #   networks:
+  #     - network_web
+  #   volumes:
+  #     - ./nginx/conf.d:/etc/nginx/conf.d
+  #     - static_volume:/djangoapp/static
+  #     - media_volume:/djangoapp/media
 
 networks:
   network_web:

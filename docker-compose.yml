@@ -34,9 +34,6 @@ services:
 networks:
   network_web:
     driver: bridge
-  network_db:
-    driver: bridge
-
 # volumes:
 #   static_volume:
 #   media_volume:

@@ -13,8 +13,6 @@ services:
       # The below mapping ensures that changes at ./django/djangoapp of host get
       # reflected in realtime at /djangoapp of the container
       - ./django/djangoapp:/djangoapp
-      # - static_volume:/djangoapp/staticfiles
-      # - media_volume:/djangoapp/media
     networks:
       - network_web
   ## nginx
@@ -34,6 +32,3 @@ services:
 networks:
   network_web:
     driver: bridge
-# volumes:
-#   static_volume:
-#   media_volume:

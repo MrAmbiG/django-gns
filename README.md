@@ -12,7 +12,7 @@ user3/djangouser3 <br>
 
 # test swagger to be working behind nginx
 - 127.0.0.1:5000 Gunicorn is serving the app here. So it should be without any static files. even the /admin panel will be without any static files
-- 127.0.0.1:8000 nginx is serving the app here.
+- 127.0.0.1:80 nginx is serving the app here.
     - So it should show the drf with hyperlinkedmodelserializer,
     - /admin should show the rich webpage,
     - /swagger/ should show the swaggerui

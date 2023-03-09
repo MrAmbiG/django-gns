@@ -5,10 +5,10 @@ django, postgresql, nginx, gunicorn, swaggerui. A POC boilerplate template
 - docker compose down -v && docker-compose up -d --no-deps --build djangoapp nginx
 
 # If running for the 1st time then create these users first, create regular users in admin panel
-django/django # superuser
-user1/djangouser1
-user2/djangouser2
-user3/djangouser3
+django/django # superuser <br>
+user1/djangouser1 <br>
+user2/djangouser2 <br>
+user3/djangouser3 <br>
 
 # test swagger to be working behind nginx
 - 127.0.0.1:5000 Gunicorn is serving the app here. So it should be without any static files. even the /admin panel will be without any static files

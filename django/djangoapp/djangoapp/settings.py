@@ -26,6 +26,7 @@ SECRET_KEY = "hbg^nf&fqq%2hrl5tw0*o3t(k4vqgn02if+gtbw$3yym5$o$qo"
 DEBUG = True
 
 ALLOWED_HOSTS = ["*"]
+CSRF_TRUSTED_ORIGINS = ["*"]
 
 
 # Application definition
